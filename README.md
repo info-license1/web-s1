@@ -1,2 +1,2 @@
 # WebDevelopement
-Web Developement Folder
+Web Development Folder
