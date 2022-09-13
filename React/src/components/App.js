@@ -23,13 +23,11 @@ window.onscroll = () => {
     if (window.scrollY > 75) {
         header.style.boxShadow = '3px 3px 7px rgb(0 0 0 / .15)';
         header.style.height = '65px';
-        appIcon.style.height = '60px';
         appTitle.style.opacity = '0';
 
     } else {
         header.style.boxShadow = 'none';
         header.style.height = '80px';
-        appIcon.style.height = '80px';
         appTitle.style.opacity = '1';
     }
 }
