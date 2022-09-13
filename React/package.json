@@ -1,0 +1,40 @@
+{
+    "devDependencies": {
+        "@babel/core": "^7.19.0",
+        "@babel/preset-env": "^7.19.0",
+        "@babel/preset-react": "^7.18.6",
+        "babel-jest": "^29.0.3",
+        "babel-loader": "^8.2.5",
+        "css-loader": "^6.7.1",
+        "html-webpack-plugin": "^5.5.0",
+        "i": "^0.3.7",
+        "jest": "^29.0.3",
+        "npm": "^8.19.1",
+        "react-router-dom": "^6.3.0",
+        "style-loader": "^3.3.1",
+        "uniqid": "^5.4.0",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.11.0"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.10.4",
+        "@emotion/styled": "^11.10.4",
+        "@mui/icons-material": "^5.10.3",
+        "@mui/material": "^5.10.5",
+        "@mui/styled-engine-sc": "^5.10.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "styled-components": "^5.3.5"
+    },
+    "scripts": {
+        "test": "jest",
+        "start": "webpack-dev-server --mode development --open --hot",
+        "build": "webpack --mode production ; rm public/main.js.LICENSE.txt ; git add public && git commit -m 'Commit public folder for the gh-pages subtree' ; git push origin -d gh-pages ; git subtree push --prefix public origin gh-pages ; rm -rf public ; git add . && git commit -m 'Build' ; git push origin main"
+    },
+    "jest": {
+        "transform": {
+        "^.+\\.[t|j]sx?$": "babel-jest"
+        }
+    }
+}
