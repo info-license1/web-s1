@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cours Deux Semestres</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                font-size: 16px;
+                justify-content: center;
+                align-items: center;
+                background-color: #212121;
+                color: #FEFEFE;
+            }
+
+            table {
+                border-spacing: 0px;
+                min-width: 650px;
+                box-shadow: 0px 2px 1px -1px rgb(0 0 0 / .2),
+                            0px 1px 1px 0px rgb(0 0 0 / .14),
+                            0px 1px 3px 0px rgb(0 0 0 / .12);
+                background-color: #2C2C2C;
+                border-radius: 4px;
+            }
+
+            thead > tr > th,
+            tbody > tr > td {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 0.9rem;
+                border-bottom: 1px solid #515151;
+                text-align: right;
+                padding: 16px;
+                flex-direction: row-reverse;
+            }
+            thead > tr > th:first-child,
+            thead > tr > th:nth-child(3) {
+                text-align: left;
+            }
+            thead > tr:first-child > th {
+                text-align: center;
+            }
+
+            tbody > tr > td {
+                font-weight: 400;
+            }
+            tbody > tr:last-child > td {
+                border: none;
+            }
+            tbody > tr > td:first-child,
+            tbody > tr > td:nth-child(3) {
+                text-align: left;
+                flex-direction: row;
+            }
+            thead > tr:first-child > th:last-child,
+            thead > tr:last-child > th:nth-child(3),
+            tbody > tr > td:nth-child(3) {
+                border-left: 1px solid #515151;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Semestre 1</th>
+                    <th colspan="2">Semestre 2</th>
+                </tr>
+                <tr>
+                    <th>ECTS</th>
+                    <th>Cours</th>
+                    <th>ECTS</th>
+                    <th>Cours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>Anglais</td>
+                    <td>3</td>
+                    <td>Anglais</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Création de pages web</td>
+                    <td>3</td>
+                    <td>Création de pages web</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Base de donnés</td>
+                    <td>6</td>
+                    <td>Base de donnés</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Programmation</td>
+                    <td>6</td>
+                    <td>Programmation</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Technique d'expression</td>
+                    <td>6</td>
+                    <td>Technique d'expression</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Environement Informatique</td>
+                    <td>12</td>
+                    <td>Environement Informatique</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Java</td>
+                    <td>12</td>
+                    <td>Java</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

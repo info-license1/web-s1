@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Départements</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                font-size: 16px;
+                justify-content: center;
+                align-items: center;
+                background-color: #212121;
+                color: #FEFEFE;
+            }
+
+            table {
+                border-spacing: 0px;
+                min-width: 650px;
+                box-shadow: 0px 2px 1px -1px rgb(0 0 0 / .2),
+                            0px 1px 1px 0px rgb(0 0 0 / .14),
+                            0px 1px 3px 0px rgb(0 0 0 / .12);
+                background-color: #2C2C2C;
+                border-radius: 4px;
+            }
+
+            thead > tr > th,
+            tbody > tr > td {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 0.9rem;
+                border-bottom: 1px solid rgb(81, 81, 81);
+                text-align: right;
+                padding: 16px;
+                flex-direction: row-reverse;
+            }
+            thead > tr > th:first-child {
+                text-align: left;
+            }
+
+            tbody > tr > td {
+                font-weight: 400;
+            }
+            tbody > tr:last-child > td {
+                border: none;
+            }
+            tbody > tr > td:first-child {
+                text-align: left;
+                flex-direction: row;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+                position: relative;
+            }
+            a::before {
+                background-color: #FEFEFE20;
+                display: inline-block;
+                font-size: .7rem;
+                padding: 6px;
+                border-radius: 4px;
+                position: absolute;
+                top: -30px;
+                text-align: center;
+                left: 0;
+                width: 180px;
+            }
+            a:hover::before {
+                content: 'Voir le département sur Wikipedia';
+            }
+            a::after {
+                content: '';
+                width: 0;
+                height: 1px;
+                display: block;
+                position: absolute;
+                bottom: -3px;
+                background-color: #FEFEFE;
+                transition: width .2s ease-in-out;
+            }
+            a:hover::after {
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Département</th>
+                    <th>Code</th>
+                    <th>Chef-lieu</th>
+                    <th>Date de création</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Aube_(d%C3%A9partement)">Aube</a></td>
+                    <td>10</td>
+                    <td>Troyes</td>
+                    <td>1990</td>
+                </tr>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Loire_(d%C3%A9partement)">Loire</a></td>
+                    <td>42</td>
+                    <td>Saint-Étienne</td>
+                    <td>1793</td>
+                </tr>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Mayenne_(d%C3%A9partement)">Mayenne</a></td>
+                    <td>53</td>
+                    <td>Laval</td>
+                    <td>1790</td>
+                </tr>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Vaucluse_(d%C3%A9partement)">Vaucluse</a></td>
+                    <td>84</td>
+                    <td>Avignon</td>
+                    <td>1793</td>
+                </tr>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Hauts-de-Seine">Hauts-de-Seine</a></td>
+                    <td>92</td>
+                    <td>Nanterre</td>
+                    <td>1968</td>
+                </tr>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Val-de-Marne">Val-de-Marne</a></td>
+                    <td>94</td>
+                    <td>Créteil</td>
+                    <td>1968</td>
+                </tr>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Paris">Paris</a></td>
+                    <td>75</td>
+                    <td>Paris</td>
+                    <td>1782</td>
+                </tr>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Haute-Sa%C3%B4ne">Haute-Saône</a></td>
+                    <td>70</td>
+                    <td>Vesoul</td>
+                    <td>1790</td>
+                </tr>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Puy-de-D%C3%B4me">Puy-de-Dôme</a></td>
+                    <td>63</td>
+                    <td>Clermont-Ferrand</td>
+                    <td>1790</td>
+                </tr>
+                <tr>
+                    <td><a href="https://fr.wikipedia.org/wiki/Oise_(d%C3%A9partement)">Oise</a></td>
+                    <td>60</td>
+                    <td>Beauvais</td>
+                    <td>1790</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

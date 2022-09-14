@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Routine du matin</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 100%;
+                text-decoration: none;
+                list-style-type: none;
+            }
+
+            *::selection {
+                background-color: #5E81AC;
+                color: #FEFEFE;
+            }
+
+            html,
+            body {
+                background-color: #161616;
+                color: #FEFEFE;
+                width: 100%;
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            main {
+                margin: auto;
+                width: 100%;
+                max-width: 75rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main > div {
+                margin: auto;
+                width: 50%;
+            }
+
+            button {
+                width: 6rem;
+                height: 2rem;
+                border: none;
+                border-radius: 4px;
+                color: #FEFEFE;
+                background-color: rgb(255 255 255 / .05);
+                margin-bottom: 1.5rem;
+                font-size: .8rem;
+                user-select: none;
+            }
+            button:hover {
+                cursor: pointer;
+                background-color: rgb(255 255 255 / .1);
+            }
+
+            h1 {
+                font-size: 3rem;
+                margin: 10rem 0;
+            }
+
+            li {
+                margin-bottom: .5rem;
+                counter-increment: olCounter;
+            }
+
+            ol {
+                animation: ol .5s ease-in-out;
+                counter-reset: olCounter;
+                margin-bottom: 2rem;
+            }
+
+            li::before {
+                content: counter(olCounter);
+                margin-right: 1rem;
+                font-size: .9rem;
+                transition: margin-right .2s ease-in-out;
+            }
+
+            li:hover::before {
+                color: #5E81AC;
+                margin-right: 1.5rem;
+            }
+
+            @keyframes ol {
+                from {
+                    opacity: 0;
+                } to {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <h1>Ma routine le matin</h1>
+
+            <div>
+                <button
+                    onclick='changeDisplay(0)'
+                >
+                    CHEZ MOI
+                </button>
+
+                <ol id='chezMoi' style='display: none;'>
+                    <li>Se réveiller</li>
+                    <li>Manger quelque chose (si j'ai faim)</li>
+                    <li>S'habiller</li>
+                    <li>Se brosser les dents</li>
+                    <li>Préparer mon sac (si pas déjà fait)</li>
+                    <li>Prendre mes clés, mes cartes, et partir</li>
+                </ol>
+            </div>
+
+            <div>
+                <button
+                    onclick='changeDisplay(1)'
+                >
+                    DEHORS
+                </button>
+
+                <ol id='dehors' style='display: none;'>
+                    <li>Marcher jusqu'à la station de métro</li>
+                    <li>Penser à rien pendant 30 minutes en écoutant de la musique</li>
+                    <li>Changer de ligne</li>
+                    <li>Penser à rien de nouveau</li>
+                    <li>Regarder l'ADE pour être sûr de la salle de cours</li>
+                    <li>Descendre du métro et rejoindre l'université</li>
+                    <li>Essayer de ne pas me perdre</li>
+                </ol>
+            </div>
+        </main>
+        
+        <script>
+            let chezMoiDisplay = false;
+            let dehorsDisplay = false;
+
+            function changeDisplay(btn) {
+                const chezMoi = document.querySelector('#chezMoi');
+                const dehors = document.querySelector('#dehors');
+
+                if (btn == 0) {
+                    if (chezMoiDisplay) {
+                        chezMoi.style.display = 'none';
+                        chezMoiDisplay = false;
+                    } else {
+                        chezMoi.style.display = 'block';
+                        chezMoiDisplay = true;
+                    }
+                } else {
+                    if (dehorsDisplay) {
+                        dehors.style.display = 'none';
+                        dehorsDisplay = false;
+                    } else {
+                        dehors.style.display = 'block';
+                        dehorsDisplay = true;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
