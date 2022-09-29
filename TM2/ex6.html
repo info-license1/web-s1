@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Calendrier</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                font-size: 16px;
+                justify-content: center;
+                align-items: center;
+                gap: 5rem;
+                background-color: #FEFEFE;
+                color: #212121;
+                font-family: sans-serif;
+                font-weight: 100;
+            }
+
+            table {
+                width: 270px;
+                border-spacing: 0 .3rem;
+            }
+
+            thead th {
+                padding: .2rem 0;
+                width: 100%;
+                font-weight: 300;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                text-align: center;
+                background-color: #066e39;
+                color: #FEFEFE;
+                letter-spacing: .2rem;
+            }
+
+            tr {
+                padding: .2rem 0;
+                display: flex;
+            }
+
+            td:last-child {
+                display: flex;
+                flex-direction: column;
+                margin-left: 1rem;
+                position: relative;
+                flex: 1;
+            }
+
+            td:last-child > span:first-child {
+                font-size: .5rem;
+            }
+            td:last-child > span:last-child,
+            td:last-child > div > span {
+                font-size: .7rem;
+                line-height: .7rem;
+            }
+            td:last-child > div {
+                display: inline-flex;
+            }
+
+            td:first-child {
+                width: 15px;
+                padding-left: .2rem;
+            }
+
+            td:nth-child(2) {
+                font-weight: bold;
+                padding-left: .4rem;
+                padding-right: .2rem;
+            }
+
+            td:not(:last-child) {
+                font-size: 1.2rem;
+            }
+
+            .red {
+                text-transform: uppercase;
+                color: #a6173a;
+            }
+
+            .sun {
+                background-color: #066e3833;
+                margin-bottom: .8rem;
+                border-bottom: 2px solid #212121;
+            }
+
+            svg {
+                width: 8px;
+                aspect-ratio: 1;
+                stroke-width: 1;
+                stroke: #212121;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                fill: none;
+                margin-left: .3rem;
+            }
+
+            td:last-child:not(.sat>td)::before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                background-color: #21212179;
+                bottom: -.3rem;
+            }
+
+            td.weekNumber:last-child:not(.sat>td)::before {
+                width: 80%;
+            }
+
+            .weekNumber::after {
+                font-size: 1.5rem;
+                color: #155135;
+                position: absolute;
+                right: 0;
+                bottom: -75%;
+            }
+            .week13::after {
+                content: '13';
+            }
+            .week14::after {
+                content: '14';
+            }
+            .week18::after {
+                content: '18';
+            }
+
+            tr:has(.red):not(.sun) > td:first-child,
+            tr:has(.red):not(.sun) > td:nth-child(2) {
+                background-color: #066e3833;
+            }
+
+            .holidays2,
+            .holidays1 {
+                position: relative;
+            }
+            .holidays2::before {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: calc(900% + .9rem);
+                background-color: #c0701e;
+                top: 0;
+                left: 57px;
+            }
+            .holidays2::after {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 200%;
+                background-color: #ba2342;
+                top: 0;
+                left: 61px;
+            }
+            .holidays1::after {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 200%;
+                background-color: #0777b1;
+                top: -50%;
+                left: 57px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan='3'>Avril</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>J</td>
+                    <td>01</td>
+                    <td class='weekNumber week13'>
+                        <span>091-274</span>
+                        <span>S. Hugues</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>02</td>
+                    <td>
+                        <span>092-273</span>
+                        <span>Vendredi Saint/Se Sandrine</span>
+                    </td>
+                </tr>
+                <tr class='sat'>
+                    <td>S</td>
+                    <td>03</td>
+                    <td>
+                        <span>093-272</span>
+                        <span>S. Richard</span>
+                    </td>
+                </tr>
+                <tr class='sun'>
+                    <td>D</td>
+                    <td>04</td>
+                    <td>
+                        <span>094-271</span>
+                        <div>
+                            <span class='red'>Pâques</span>
+                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+                                <path d='M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z' />
+                            </svg>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>05</td>
+                    <td>
+                        <span>095-270</span>
+                        <span><span class='red'>L. de Pâques</span>/Se Irène</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>06</td>
+                    <td>
+                        <span>096-269</span>
+                        <span>S. Marcellin</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>07</td>
+                    <td class='weekNumber week14'>
+                        <span>097-268</span>
+                        <span>S. J.-B. de La Salle</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>08</td>
+                    <td>
+                        <span>098-267</span>
+                        <span>Se Julie</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>09</td>
+                    <td>
+                        <span>099-266</span>
+                        <span>S. Gauthier</span>
+                    </td>
+                </tr>
+                <tr class='sat'>
+                    <td>S</td>
+                    <td>10</td>
+                    <td>
+                        <span>100-265</span>
+                        <span>S. Fulbert</span>
+                    </td>
+                </tr>
+                <tr class='sun holidays1'>
+                    <td>D</td>
+                    <td>11</td>
+                    <td>
+                        <span>101-264</span>
+                        <span>S. Stanislas</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan='3'>Mai</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class='sat holidays2'>
+                    <td>S</td>
+                    <td>01</td>
+                    <td>
+                        <span>121-244</span>
+                        <span class='red'>Fête du travail</span>
+                    </td>
+                </tr>
+                <tr class='sun'>
+                    <td>D</td>
+                    <td>02</td>
+                    <td>
+                        <span>122-243</span>
+                        <span>S. Boris</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>03</td>
+                    <td>
+                        <span>123-242</span>
+                        <div>
+                            <span>SS. Phil., Jacq.</span>
+                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+                                <path d='M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z' />
+                            </svg>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>04</td>
+                    <td>
+                        <span>124-241</span>
+                        <span>S. Sylvain</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>05</td>
+                    <td class='weekNumber week18'>
+                        <span>125-240</span>
+                        <span>Se Judith</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>06</td>
+                    <td>
+                        <span>126-239</span>
+                        <span>Se Prudence</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>07</td>
+                    <td>
+                        <span>127-238</span>
+                        <span>Se Gisèle</span>
+                    </td>
+                </tr>
+                <tr class='sat'>
+                    <td>S</td>
+                    <td>08</td>
+                    <td>
+                        <span>128-237</span>
+                        <span class='red'>Victoire 1945</span>
+                    </td>
+                </tr>
+                <tr class='sun'>
+                    <td>D</td>
+                    <td>09</td>
+                    <td>
+                        <span>129-236</span>
+                        <span>S. Pacôme</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>10</td>
+                    <td>
+                        <span>130-235</span>
+                        <span>Se Solange</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>11</td>
+                    <td>
+                        <span>131-234</span>
+                        <div>
+                            <span>Se Estelle/S. Mamert</span>
+                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+                                <circle fill='#212121' cx='12' cy='12' r='9' />
+                            </svg>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

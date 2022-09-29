@@ -3,7 +3,7 @@
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>Départements</title>
+        <title>Départements v2</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
@@ -29,6 +29,19 @@
                             0px 1px 3px 0px rgb(0 0 0 / .12);
                 background-color: #2C2C2C;
                 border-radius: 4px;
+            }
+
+            thead {
+                background-color: #1b1b1b;
+                border-radius: 4px;
+            }
+
+            tbody > tr:nth-child(odd) {
+                background-color: #4d4d4d;
+            }
+
+            tbody > tr:hover {
+                background-color: #1b1b1b9c;
             }
 
             thead > tr > th,
@@ -58,35 +71,9 @@
             a {
                 text-decoration: none;
                 color: inherit;
-                position: relative;
             }
-            a::before {
-                background-color: #FEFEFE20;
-                display: inline-block;
-                font-size: .7rem;
-                padding: 6px;
-                border-radius: 4px;
-                position: absolute;
-                top: -30px;
-                text-align: center;
-                left: 0;
-                width: 180px;
-            }
-            a:hover::before {
-                content: 'Voir le département sur Wikipedia';
-            }
-            a::after {
-                content: '';
-                width: 0;
-                height: 1px;
-                display: block;
-                position: absolute;
-                bottom: -3px;
-                background-color: #FEFEFE;
-                transition: width .2s ease-in-out;
-            }
-            a:hover::after {
-                width: 100%;
+            tr > td:nth-child(2) {
+                font-weight: bold;
             }
         </style>
     </head>
