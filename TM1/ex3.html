@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
     <head>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Routine du matin</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
@@ -11,7 +11,7 @@
             body {
                 margin: 0;
                 background-color: #161616;
-                color: #FEFEFE;
+                color: #fefefe;
                 width: 100%;
                 height: 100%;
                 font-size: 16px;
@@ -34,7 +34,7 @@
 
             .title {
                 line-height: 48px;
-                color: #FFFFFFB3;
+                color: #ffffffb3;
                 font-size: 0.875rem;
                 padding: 0 16px;
                 position: sticky;
@@ -65,12 +65,12 @@
                 padding: 8px 16px;
             }
             li:hover {
-                background-color: #FEFEFE14;
+                background-color: #fefefe14;
             }
             .subItem {
                 padding: 8px 16px 8px 32px;
                 display: none;
-                animation: li .5s ease-in-out;
+                animation: li 0.5s ease-in-out;
             }
 
             .subItem > div:first-child,
@@ -97,14 +97,15 @@
                 flex-shrink: 0;
                 font-size: 1.5rem;
                 fill: none;
-                stroke: #FEFEFE;
+                stroke: #fefefe;
                 stroke-width: 1.5;
             }
 
             @keyframes li {
                 from {
                     opacity: 0;
-                } to {
+                }
+                to {
                     opacity: 1;
                 }
             }
@@ -113,87 +114,107 @@
 
     <body>
         <main>
-            <div class='list'>
+            <div class="list">
                 <ol>
-                    <div class='title'>Routine Matinale</div>
-                    <li class='dropDown' onclick='changeDisplay(0)'>
+                    <div class="title">Routine Matinale</div>
+                    <li class="dropDown" onclick="changeDisplay(0)">
                         <div>
-                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                                <polyline points='5 12 3 12 12 3 21 12 19 12'/>
-                                <path d='M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7'/>
-                                <path d='M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6'/>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                            >
+                                <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                                <path
+                                    d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"
+                                />
+                                <path
+                                    d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"
+                                />
                             </svg>
                         </div>
                         <div>Chez moi</div>
-                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                            <polyline points='6 9 12 15 18 9'/>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                        >
+                            <polyline points="6 9 12 15 18 9" />
                         </svg>
                     </li>
-                    <li class='subItem firstDropDown'>
+                    <li class="subItem firstDropDown">
                         <div>1</div>
                         <div>Se réveiller</div>
                     </li>
-                    <li class='subItem firstDropDown'>
+                    <li class="subItem firstDropDown">
                         <div>2</div>
                         <div>Manger quelque chose (si j'ai faim)</div>
                     </li>
-                    <li class='subItem firstDropDown'>
+                    <li class="subItem firstDropDown">
                         <div>3</div>
                         <div>S'habiller</div>
                     </li>
-                    <li class='subItem firstDropDown'>
+                    <li class="subItem firstDropDown">
                         <div>4</div>
                         <div>Se brosser les dents</div>
                     </li>
-                    <li class='subItem firstDropDown'>
+                    <li class="subItem firstDropDown">
                         <div>5</div>
                         <div>Préparer mon sac (si pas déjà fait)</div>
                     </li>
-                    <li class='subItem firstDropDown'>
+                    <li class="subItem firstDropDown">
                         <div>6</div>
                         <div>Prendre mes clés, mes cartes, et partir</div>
                     </li>
-                    <li class='dropDown' onclick='changeDisplay(1)'>
+                    <li class="dropDown" onclick="changeDisplay(1)">
                         <div>
-                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                                <path d='M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2'/>
-                                <path d='M7 12h14l-3 -3m0 6l3 -3'/>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+                                />
+                                <path d="M7 12h14l-3 -3m0 6l3 -3" />
                             </svg>
                         </div>
                         <div>En dehors</div>
-                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                            <polyline points='6 9 12 15 18 9'/>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                        >
+                            <polyline points="6 9 12 15 18 9" />
                         </svg>
                     </li>
-                    <li class='subItem secondDropDown'>
+                    <li class="subItem secondDropDown">
                         <div>1</div>
                         <div>Marcher jusqu'à la station de métro</div>
                     </li>
-                    <li class='subItem secondDropDown'>
+                    <li class="subItem secondDropDown">
                         <div>2</div>
                         <div>Penser à rien pendant 30 minutes</div>
                     </li>
-                    <li class='subItem secondDropDown'>
+                    <li class="subItem secondDropDown">
                         <div>3</div>
                         <div>Ecouter de la musiquer</div>
                     </li>
-                    <li class='subItem secondDropDown'>
+                    <li class="subItem secondDropDown">
                         <div>4</div>
                         <div>Changer de ligne</div>
                     </li>
-                    <li class='subItem secondDropDown'>
+                    <li class="subItem secondDropDown">
                         <div>5</div>
                         <div>Penser à rien de nouveau</div>
                     </li>
-                    <li class='subItem secondDropDown'>
+                    <li class="subItem secondDropDown">
                         <div>6</div>
-                        <div>Regarder l'ADE pour être sûr de la salle de cours</div>
+                        <div>
+                            Regarder l'ADE pour être sûr de la salle de cours
+                        </div>
                     </li>
-                    <li class='subItem secondDropDown'>
+                    <li class="subItem secondDropDown">
                         <div>7</div>
                         <div>Descendre du métro et rejoindre l'université</div>
                     </li>
-                    <li class='subItem secondDropDown'>
+                    <li class="subItem secondDropDown">
                         <div>8</div>
                         <div>Essayer de ne pas me perdre</div>
                     </li>
@@ -213,13 +234,21 @@
                 const svg = document.querySelectorAll('.dropDown > svg');
 
                 if (btn == 0) {
-                    chezMoi.forEach(li => li.style.display = (chezMoiDisplay) ? 'none' : 'flex');
-                    svg[0].innerHTML = (chezMoiDisplay) ? downIcon : upIcon;
+                    chezMoi.forEach(
+                        (li) =>
+                            (li.style.display = chezMoiDisplay
+                                ? 'none'
+                                : 'flex')
+                    );
+                    svg[0].innerHTML = chezMoiDisplay ? downIcon : upIcon;
                     chezMoiDisplay = !chezMoiDisplay;
                 } else {
-                    dehors.forEach(li => li.style.display = (dehorsDisplay) ? 'none' : 'flex');
-                    svg[1].innerHTML = (dehorsDisplay) ? downIcon : upIcon;
-                    dehorsDisplay = !dehorsDisplay
+                    dehors.forEach(
+                        (li) =>
+                            (li.style.display = dehorsDisplay ? 'none' : 'flex')
+                    );
+                    svg[1].innerHTML = dehorsDisplay ? downIcon : upIcon;
+                    dehorsDisplay = !dehorsDisplay;
                 }
             }
         </script>

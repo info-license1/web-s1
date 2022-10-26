@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta title="CM3 de CPW">
-        <meta charset="utf-8">
-        <meta content="Exemples de CSS avancé">
+        <meta title="CM3 de CPW" />
+        <meta charset="utf-8" />
+        <meta content="Exemples de CSS avancé" />
         <style>
-            
-            div.bordure{
-                border: 1px solid black ;
+            div.bordure {
+                border: 1px solid black;
                 width: 150px;
                 height: 50;
                 padding: 50px;
@@ -18,15 +17,14 @@
                 top: 100px;
             }
 
-            span.anchor{
+            span.anchor {
                 display: block;
                 position: relative;
-                top:-120px;
+                top: -120px;
                 visibility: hidden;
             }
-            
 
-            .titre{
+            .titre {
                 position: relative;
                 border: solid black 1px;
                 border-top-left-radius: 8px;
@@ -37,10 +35,10 @@
                 padding-left: 20px;
                 padding-bottom: 20px;
                 position: sticky;
-                top:0px;
+                top: 0px;
                 z-index: 2;
             }
-            
+
             .btn {
                 background-color: red;
                 border: 1px solid black;
@@ -50,18 +48,17 @@
                 width: 40px;
                 height: 15px;
                 display: inline-block;
-                margin-left: auto;                
+                margin-left: auto;
                 position: relative;
                 top: -40px;
                 left: 250px;
-
             }
 
-            header{
+            header {
                 /*background-color: lightpink;*/
                 height: 50px;
                 /*border: solid black 1px;*/
-                background-image: url("upec.png");
+                background-image: url('upec.png');
                 background-size: contain;
                 background-repeat: no-repeat;
                 padding-left: 20px;
@@ -71,7 +68,7 @@
                 left: 0px;
             }
 
-            body{
+            body {
                 margin: 0px;
             }
 
@@ -90,28 +87,27 @@
                 display: flex;
                 flex-direction: row;
                 margin: 0;
-                padding: 0; 
+                padding: 0;
             }
 
-            #menu li a { 
-                background-color: black; 
-               /* border-bottom-left-radius: 8px;*/
+            #menu li a {
+                background-color: black;
+                /* border-bottom-left-radius: 8px;*/
                 /*border-bottom-left-radius: 8px;*/
 
-                text-align: center; 
-                text-decoration: none; 
-                color: white; 
-                text-align: left; 
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                text-align: left;
                 padding-left: 20px;
                 padding-right: 20px;
-
             }
 
             #menu li a:hover {
                 background-color: red;
             }
 
-            #menu .dropdown .dd-content { 
+            #menu .dropdown .dd-content {
                 display: none;
                 position: absolute;
             }
@@ -120,17 +116,17 @@
                 flex-direction: column;
             }
 
-            #menu .dropdown:hover .dd-content a { 
-                background-color: lightgrey; 
+            #menu .dropdown:hover .dd-content a {
+                background-color: lightgrey;
                 color: black;
                 padding: 10px 0px;
                 padding-right: 10px;
             }
-            #menu .dropdown:hover .dd-content a:hover { 
+            #menu .dropdown:hover .dd-content a:hover {
                 background-color: darkgrey;
             }
 
-            .test_inline{
+            .test_inline {
                 border: solid black 1px;
                 display: inline-block;
                 width: 50px;
@@ -140,21 +136,13 @@
     </head>
 
     <body>
-
-        <header>
-        </header>
+        <header></header>
 
         <div class="titre">
-            <h2>
-                Création de pages web 
-            </h2>
-            <a class="btn" href="https://www.u-pec.fr">
-                lien1
-            </a>
+            <h2>Création de pages web</h2>
+            <a class="btn" href="https://www.u-pec.fr"> lien1 </a>
 
-            <a class="btn" href="https://www.u-pec.fr">
-                lien2
-            </a>
+            <a class="btn" href="https://www.u-pec.fr"> lien2 </a>
         </div>
 
         <nav id="menu">
@@ -174,69 +162,100 @@
         </nav>
 
         <div class="bordure">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin elementum turpis, eget interdum dui
-        lobortis vitae. Cras vehicula efficitur nibh, quis pretium tortor pulvinar a. Fusce fermentum risus sit amet velit
-        condimentum facilisis. Aenean semper justo in nunc lacinia facilisis. Proin malesuada sed nisl vitae commodo. Integer
-        elit odio, dignissim in auctor congue, ornare sed risus. Phasellus ornare sodales leo, iaculis tristique diam efficitur
-        sed. Duis eleifend enim vitae urna commodo, eu dignissim ligula luctus. Vestibulum quis leo a massa rhoncus sagittis vel
-        sit amet tortor. Donec ultrices, est eget gravida facilisis, erat lacus consectetur felis, sed molestie metus massa non
-        nunc. Nulla sodales malesuada dapibus. Sed sapien nibh, porta at efficitur vitae, pretium semper velit. Integer lobortis
-        libero quis enim viverra, sed sagittis ipsum consequat. Aenean non justo aliquam, mollis urna ut, mollis enim.
-        <br>
-        Fusce in sapien ut libero commodo tincidunt at id risus. Donec nec tellus non felis scelerisque molestie. Aenean iaculis
-        eros molestie ante porta, vel faucibus risus mattis. Pellentesque feugiat tortor quis est molestie, ac pulvinar libero
-        tempor. Aliquam interdum velit et enim blandit, non hendrerit sapien pretium. Cras eu tempus odio, elementum maximus ex.
-        Fusce aliquet elementum est a lobortis. Aenean malesuada sapien et enim mollis, sit amet iaculis dui feugiat. Nam
-        vulputate pellentesque arcu. Vestibulum malesuada justo eu metus lacinia vehicula. Sed eget nunc feugiat, rutrum purus
-        id, accumsan diam.
-        <br>
-        Curabitur ante lacus, eleifend sed dolor a, aliquam posuere eros. In ornare nisi eu lectus luctus, a cursus libero
-        porttitor. Curabitur ornare nisi mollis consequat ultrices. Aliquam neque nisl, vulputate non porta at, auctor ut nisi.
-        Maecenas porta, ligula nec pretium laoreet, ligula erat pulvinar tortor, in condimentum lectus lacus vel felis. Nam ut
-        congue nibh, sed suscipit lorem. Nulla eget porta arcu. Cras consectetur orci vitae rhoncus porttitor. Morbi eget lorem
-        et augue pellentesque ultrices sed nec odio. Ut ac est dignissim, ullamcorper tellus in, condimentum metus. Phasellus
-        congue gravida consequat. Suspendisse porta et mauris at elementum. Pellentesque nec varius quam.
-        <br>
-        Donec posuere ligula tellus, sit amet facilisis nunc ultricies ac. Pellentesque finibus enim eleifend ex molestie
-        placerat. Mauris feugiat scelerisque dui, venenatis congue lacus bibendum vitae. Nullam vel nisl bibendum, ullamcorper
-        est id, ornare nisl. Donec molestie lobortis congue. Fusce malesuada lacus sit amet purus viverra tincidunt. Proin
-        sodales nibh vitae est aliquam, nec scelerisque nulla tincidunt. Vivamus et orci nec nulla vulputate cursus non eu nisi.
-        Nullam tincidunt nisi augue, nec ultrices dui convallis nec. Aliquam in congue odio. Sed feugiat nibh sollicitudin
-        tempor hendrerit.
-        <br>
-        <p>
-        <span class="anchor" id="loremp5"></span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur at nulla et molestie. Nullam convallis
-            tellus vitae libero mollis, in vestibulum libero placerat. Duis imperdiet quam in neque vestibulum scelerisque. Sed
-            porta condimentum hendrerit. Ut ac leo eros. Etiam dictum nec augue vitae vehicula. Etiam faucibus cursus tortor, eu
-            pulvinar sapien posuere et. Quisque scelerisque, justo id aliquet commodo, nunc tortor condimentum ligula, eget semper
-            augue lorem sit amet sapien. In pulvinar vulputate massa, nec pulvinar sapien viverra vitae. Quisque tincidunt libero
-            nec augue malesuada, dictum porttitor libero tempor. Aliquam lobortis lectus vel quam lobortis, nec volutpat nunc
-            luctus. Pellentesque quis sem vitae ex finibus eleifend sed a mauris. Donec ullamcorper libero vel est imperdiet, sit
-            amet aliquam augue ultricies. Phasellus accumsan, dui ut pharetra venenatis, felis ex interdum ex, vel interdum nisi
-            enim at sapien.
-        </p>
-        <br>
-        Sed et augue a lacus varius mattis at fringilla libero. Vivamus quis enim tincidunt ex tincidunt pharetra. Donec quis
-        venenatis lectus. Sed imperdiet nulla sit amet tortor interdum, id porttitor ipsum accumsan. Donec efficitur non nisi in
-        efficitur. Ut porttitor orci pretium felis pretium, quis vestibulum arcu dignissim. Cras in maximus tortor.
-        <p>
-            Aenean a suscipit ex. Nulla facilisi. Vivamus vel commodo ante. Mauris dui neque, hendrerit at blandit id, tempus non
-            dui. Praesent ultricies venenatis augue, nec iaculis turpis dictum nec. Quisque ac finibus nibh, at dictum urna. Mauris
-            porttitor sodales leo eget ornare. Maecenas ac elit egestas, elementum ipsum eu, consequat lacus. Curabitur tincidunt
-            diam arcu, quis pretium risus tempus in. Quisque eu metus porttitor, tempor felis vel, bibendum nunc. Integer
-            scelerisque massa in risus ullamcorper, a semper turpis tempor. Suspendisse a malesuada sapien. Ut a ipsum consequat,
-            vestibulum justo eget, maximus diam. Ut in lacus vestibulum, consectetur massa quis, tincidunt augue. Aliquam ex augue,
-            ullamcorper vitae maximus rhoncus, posuere nec tortor.
-        </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            sollicitudin elementum turpis, eget interdum dui lobortis vitae.
+            Cras vehicula efficitur nibh, quis pretium tortor pulvinar a. Fusce
+            fermentum risus sit amet velit condimentum facilisis. Aenean semper
+            justo in nunc lacinia facilisis. Proin malesuada sed nisl vitae
+            commodo. Integer elit odio, dignissim in auctor congue, ornare sed
+            risus. Phasellus ornare sodales leo, iaculis tristique diam
+            efficitur sed. Duis eleifend enim vitae urna commodo, eu dignissim
+            ligula luctus. Vestibulum quis leo a massa rhoncus sagittis vel sit
+            amet tortor. Donec ultrices, est eget gravida facilisis, erat lacus
+            consectetur felis, sed molestie metus massa non nunc. Nulla sodales
+            malesuada dapibus. Sed sapien nibh, porta at efficitur vitae,
+            pretium semper velit. Integer lobortis libero quis enim viverra, sed
+            sagittis ipsum consequat. Aenean non justo aliquam, mollis urna ut,
+            mollis enim.
+            <br />
+            Fusce in sapien ut libero commodo tincidunt at id risus. Donec nec
+            tellus non felis scelerisque molestie. Aenean iaculis eros molestie
+            ante porta, vel faucibus risus mattis. Pellentesque feugiat tortor
+            quis est molestie, ac pulvinar libero tempor. Aliquam interdum velit
+            et enim blandit, non hendrerit sapien pretium. Cras eu tempus odio,
+            elementum maximus ex. Fusce aliquet elementum est a lobortis. Aenean
+            malesuada sapien et enim mollis, sit amet iaculis dui feugiat. Nam
+            vulputate pellentesque arcu. Vestibulum malesuada justo eu metus
+            lacinia vehicula. Sed eget nunc feugiat, rutrum purus id, accumsan
+            diam.
+            <br />
+            Curabitur ante lacus, eleifend sed dolor a, aliquam posuere eros. In
+            ornare nisi eu lectus luctus, a cursus libero porttitor. Curabitur
+            ornare nisi mollis consequat ultrices. Aliquam neque nisl, vulputate
+            non porta at, auctor ut nisi. Maecenas porta, ligula nec pretium
+            laoreet, ligula erat pulvinar tortor, in condimentum lectus lacus
+            vel felis. Nam ut congue nibh, sed suscipit lorem. Nulla eget porta
+            arcu. Cras consectetur orci vitae rhoncus porttitor. Morbi eget
+            lorem et augue pellentesque ultrices sed nec odio. Ut ac est
+            dignissim, ullamcorper tellus in, condimentum metus. Phasellus
+            congue gravida consequat. Suspendisse porta et mauris at elementum.
+            Pellentesque nec varius quam.
+            <br />
+            Donec posuere ligula tellus, sit amet facilisis nunc ultricies ac.
+            Pellentesque finibus enim eleifend ex molestie placerat. Mauris
+            feugiat scelerisque dui, venenatis congue lacus bibendum vitae.
+            Nullam vel nisl bibendum, ullamcorper est id, ornare nisl. Donec
+            molestie lobortis congue. Fusce malesuada lacus sit amet purus
+            viverra tincidunt. Proin sodales nibh vitae est aliquam, nec
+            scelerisque nulla tincidunt. Vivamus et orci nec nulla vulputate
+            cursus non eu nisi. Nullam tincidunt nisi augue, nec ultrices dui
+            convallis nec. Aliquam in congue odio. Sed feugiat nibh sollicitudin
+            tempor hendrerit.
+            <br />
+            <p>
+                <span class="anchor" id="loremp5"></span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent efficitur at nulla et molestie. Nullam convallis tellus
+                vitae libero mollis, in vestibulum libero placerat. Duis
+                imperdiet quam in neque vestibulum scelerisque. Sed porta
+                condimentum hendrerit. Ut ac leo eros. Etiam dictum nec augue
+                vitae vehicula. Etiam faucibus cursus tortor, eu pulvinar sapien
+                posuere et. Quisque scelerisque, justo id aliquet commodo, nunc
+                tortor condimentum ligula, eget semper augue lorem sit amet
+                sapien. In pulvinar vulputate massa, nec pulvinar sapien viverra
+                vitae. Quisque tincidunt libero nec augue malesuada, dictum
+                porttitor libero tempor. Aliquam lobortis lectus vel quam
+                lobortis, nec volutpat nunc luctus. Pellentesque quis sem vitae
+                ex finibus eleifend sed a mauris. Donec ullamcorper libero vel
+                est imperdiet, sit amet aliquam augue ultricies. Phasellus
+                accumsan, dui ut pharetra venenatis, felis ex interdum ex, vel
+                interdum nisi enim at sapien.
+            </p>
+            <br />
+            Sed et augue a lacus varius mattis at fringilla libero. Vivamus quis
+            enim tincidunt ex tincidunt pharetra. Donec quis venenatis lectus.
+            Sed imperdiet nulla sit amet tortor interdum, id porttitor ipsum
+            accumsan. Donec efficitur non nisi in efficitur. Ut porttitor orci
+            pretium felis pretium, quis vestibulum arcu dignissim. Cras in
+            maximus tortor.
+            <p>
+                Aenean a suscipit ex. Nulla facilisi. Vivamus vel commodo ante.
+                Mauris dui neque, hendrerit at blandit id, tempus non dui.
+                Praesent ultricies venenatis augue, nec iaculis turpis dictum
+                nec. Quisque ac finibus nibh, at dictum urna. Mauris porttitor
+                sodales leo eget ornare. Maecenas ac elit egestas, elementum
+                ipsum eu, consequat lacus. Curabitur tincidunt diam arcu, quis
+                pretium risus tempus in. Quisque eu metus porttitor, tempor
+                felis vel, bibendum nunc. Integer scelerisque massa in risus
+                ullamcorper, a semper turpis tempor. Suspendisse a malesuada
+                sapien. Ut a ipsum consequat, vestibulum justo eget, maximus
+                diam. Ut in lacus vestibulum, consectetur massa quis, tincidunt
+                augue. Aliquam ex augue, ullamcorper vitae maximus rhoncus,
+                posuere nec tortor.
+            </p>
 
-        un mot <span class="test_inline">
-            ceci est mon span
-        </span> un deuxieme mot
-    </div>
-
-  
-    
-    
+            un mot <span class="test_inline"> ceci est mon span </span> un
+            deuxieme mot
+        </div>
     </body>
 </html>
