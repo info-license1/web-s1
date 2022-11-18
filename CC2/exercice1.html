@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #202020;
+            }
+            .grid {
+                width: 600px;
+                height: 600px;
+                display: grid;
+                grid-template-areas:
+                    'f f f d d'
+                    'f f f d d'
+                    'e e a a a'
+                    'e e g b b'
+                    'e e c c c';
+            }
+
+            .a {
+                grid-area: a;
+            }
+
+            .b {
+                grid-area: b;
+            }
+
+            .c {
+                grid-area: c;
+            }
+
+            .d {
+                grid-area: d;
+            }
+
+            .e {
+                grid-area: e;
+            }
+
+            .f {
+                grid-area: f;
+            }
+
+            .g {
+                grid-area: g;
+            }
+
+            .red {
+                background-color: #f67e6f;
+            }
+
+            .green {
+                background-color: #8dee8d;
+            }
+
+            .blue {
+                background-color: #aad8e5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="box red a"></div>
+            <div class="box red b"></div>
+            <div class="box red c"></div>
+            <div class="box green d"></div>
+            <div class="box green e"></div>
+            <div class="box blue f"></div>
+            <div class="box blue g"></div>
+        </div>
+    </body>
+</html>
