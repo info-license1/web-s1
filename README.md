@@ -11,7 +11,9 @@ Le repository est organisé en fonction des différents travaux réalisés penda
 
 ## Instructions d'Utilisation
 1. Clonez ce repository sur votre machine locale en utilisant la commande suivante :
-   - `git clone https://github.com/info-license1/web-s1`
+```
+git clone https://github.com/info-license1/web-s1
+```
 
 2. Naviguez vers le répertoire "TM" pour accéder au contenu des travaux.
 
@@ -37,7 +39,9 @@ The repository is organized according to the different assignments completed dur
 
 ## Usage Instructions
 1. Clone this repository to your local machine using the following command:
-   - `git clone https://github.com/info-license1/web-s1`
+```
+git clone https://github.com/info-license1/web-s1
+```
 
 2. Navigate to the "TM" directories to access the assignment content.
 
