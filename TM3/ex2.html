@@ -12,8 +12,8 @@
 
             html,
             body {
-                width: 100%;
-                height: 100%;
+                width: 100dvw;
+                height: 100dvh;
                 font-size: 16px;
                 display: flex;
                 align-items: center;
@@ -109,10 +109,11 @@
             }
 
             .input div:first-child::before {
-                content: 'Login';
+                content: "Login";
             }
+
             .input div:last-child::before {
-                content: 'MDP';
+                content: "MDP";
             }
         </style>
     </head>
@@ -123,7 +124,7 @@
                 <h1>Authentifiez-vous</h1>
             </div>
 
-            <form action="">
+            <form>
                 <div class="input">
                     <div class="email">
                         <input type="email" placeholder="email" />
@@ -135,7 +136,7 @@
                 </div>
 
                 <div class="bottom">
-                    <button>Connexion</button>
+                    <button type="button">Connexion</button>
                     <div class="misc">
                         <a href="">Mot de passe oublié</a>
                         <a href="">S'enregistrer</a>

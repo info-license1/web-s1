@@ -7,8 +7,8 @@
 html,
 body,
 .wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100dvw;
+    height: 100dvh;
     background-color: #ffffff;
     color: #161616;
     font-family: sans-serif;
@@ -25,6 +25,7 @@ body,
 aside {
     max-width: 250px;
 }
+
 aside:last-child {
     max-width: 300px;
 }
@@ -36,10 +37,12 @@ aside:last-child {
     justify-content: space-between;
     padding-top: 0.5rem;
 }
+
 .top h2 {
     color: #c62728;
     font-size: 1rem;
 }
+
 select {
     width: 100px;
     height: 40px;
@@ -53,6 +56,7 @@ aside > div {
     flex-direction: column;
     gap: 2.5rem;
 }
+
 aside > div {
     gap: 0.7rem;
 }
@@ -62,8 +66,9 @@ aside > div {
     display: block;
     position: relative;
 }
+
 .border-bottom::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
@@ -101,7 +106,7 @@ h1 {
 }
 
 h1::before {
-    content: '';
+    content: "";
     width: 10px;
     aspect-ratio: 1;
     background-color: #c62728;
@@ -115,6 +120,7 @@ h1::before {
 .wrapper > *:not(:last-child) {
     padding-right: 2rem;
 }
+
 .wrapper > *:not(:first-child) {
     padding-left: 2rem;
 }

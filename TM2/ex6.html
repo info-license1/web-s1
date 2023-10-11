@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Calendrier</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
             html,
             body {
@@ -57,11 +57,13 @@
             td:last-child > span:first-child {
                 font-size: 0.5rem;
             }
+
             td:last-child > span:last-child,
             td:last-child > div > span {
                 font-size: 0.7rem;
                 line-height: 0.7rem;
             }
+
             td:last-child > div {
                 display: inline-flex;
             }
@@ -104,7 +106,7 @@
             }
 
             td:last-child:not(.sat > td)::before {
-                content: '';
+                content: "";
                 position: absolute;
                 height: 1px;
                 width: 100%;
@@ -123,14 +125,17 @@
                 right: 0;
                 bottom: -75%;
             }
+
             .week13::after {
-                content: '13';
+                content: "13";
             }
+
             .week14::after {
-                content: '14';
+                content: "14";
             }
+
             .week18::after {
-                content: '18';
+                content: "18";
             }
 
             tr:has(.red):not(.sun) > td:first-child,
@@ -142,8 +147,9 @@
             .holidays1 {
                 position: relative;
             }
+
             .holidays2::before {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 2px;
                 height: calc(900% + 0.9rem);
@@ -151,8 +157,9 @@
                 top: 0;
                 left: 57px;
             }
+
             .holidays2::after {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 2px;
                 height: 200%;
@@ -160,8 +167,9 @@
                 top: 0;
                 left: 61px;
             }
+
             .holidays1::after {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 2px;
                 height: 200%;
@@ -189,6 +197,7 @@
                         <span>S. Hugues</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>V</td>
                     <td>02</td>
@@ -197,6 +206,7 @@
                         <span>Vendredi Saint/Se Sandrine</span>
                     </td>
                 </tr>
+
                 <tr class="sat">
                     <td>S</td>
                     <td>03</td>
@@ -205,6 +215,7 @@
                         <span>S. Richard</span>
                     </td>
                 </tr>
+
                 <tr class="sun">
                     <td>D</td>
                     <td>04</td>
@@ -212,10 +223,7 @@
                         <span>094-271</span>
                         <div>
                             <span class="red">Pâques</span>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                            >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
                                 />
@@ -223,17 +231,16 @@
                         </div>
                     </td>
                 </tr>
+
                 <tr>
                     <td>L</td>
                     <td>05</td>
                     <td>
                         <span>095-270</span>
-                        <span
-                            ><span class="red">L. de Pâques</span>/Se
-                            Irène</span
-                        >
+                        <span><span class="red">L. de Pâques</span>/Se Irène</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>M</td>
                     <td>06</td>
@@ -242,6 +249,7 @@
                         <span>S. Marcellin</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>M</td>
                     <td>07</td>
@@ -250,6 +258,7 @@
                         <span>S. J.-B. de La Salle</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>J</td>
                     <td>08</td>
@@ -258,6 +267,7 @@
                         <span>Se Julie</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>V</td>
                     <td>09</td>
@@ -266,6 +276,7 @@
                         <span>S. Gauthier</span>
                     </td>
                 </tr>
+
                 <tr class="sat">
                     <td>S</td>
                     <td>10</td>
@@ -274,6 +285,7 @@
                         <span>S. Fulbert</span>
                     </td>
                 </tr>
+
                 <tr class="sun holidays1">
                     <td>D</td>
                     <td>11</td>
@@ -301,6 +313,7 @@
                         <span class="red">Fête du travail</span>
                     </td>
                 </tr>
+
                 <tr class="sun">
                     <td>D</td>
                     <td>02</td>
@@ -309,6 +322,7 @@
                         <span>S. Boris</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>L</td>
                     <td>03</td>
@@ -316,10 +330,7 @@
                         <span>123-242</span>
                         <div>
                             <span>SS. Phil., Jacq.</span>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                            >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
                                 />
@@ -327,6 +338,7 @@
                         </div>
                     </td>
                 </tr>
+
                 <tr>
                     <td>M</td>
                     <td>04</td>
@@ -335,6 +347,7 @@
                         <span>S. Sylvain</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>M</td>
                     <td>05</td>
@@ -343,6 +356,7 @@
                         <span>Se Judith</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>J</td>
                     <td>06</td>
@@ -351,6 +365,7 @@
                         <span>Se Prudence</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>V</td>
                     <td>07</td>
@@ -359,6 +374,7 @@
                         <span>Se Gisèle</span>
                     </td>
                 </tr>
+
                 <tr class="sat">
                     <td>S</td>
                     <td>08</td>
@@ -367,6 +383,7 @@
                         <span class="red">Victoire 1945</span>
                     </td>
                 </tr>
+
                 <tr class="sun">
                     <td>D</td>
                     <td>09</td>
@@ -375,6 +392,7 @@
                         <span>S. Pacôme</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>L</td>
                     <td>10</td>
@@ -383,6 +401,7 @@
                         <span>Se Solange</span>
                     </td>
                 </tr>
+
                 <tr>
                     <td>M</td>
                     <td>11</td>
@@ -390,10 +409,7 @@
                         <span>131-234</span>
                         <div>
                             <span>Se Estelle/S. Mamert</span>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                            >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <circle fill="#212121" cx="12" cy="12" r="9" />
                             </svg>
                         </div>

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Départements</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
             html,
             body {
@@ -24,8 +24,7 @@
             table {
                 border-spacing: 0px;
                 min-width: 650px;
-                box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 0.2),
-                    0px 1px 1px 0px rgb(0 0 0 / 0.14),
+                box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 0.2), 0px 1px 1px 0px rgb(0 0 0 / 0.14),
                     0px 1px 3px 0px rgb(0 0 0 / 0.12);
                 background-color: #2c2c2c;
                 border-radius: 4px;
@@ -33,7 +32,7 @@
 
             thead > tr > th,
             tbody > tr > td {
-                font-family: 'Roboto', sans-serif;
+                font-family: "Roboto", sans-serif;
                 font-weight: 500;
                 font-size: 0.9rem;
                 border-bottom: 1px solid rgb(81, 81, 81);
@@ -41,6 +40,7 @@
                 padding: 16px;
                 flex-direction: row-reverse;
             }
+
             thead > tr > th:first-child {
                 text-align: left;
             }
@@ -48,20 +48,24 @@
             tbody > tr > td {
                 font-weight: 400;
             }
+
             tbody > tr:last-child > td {
                 border: none;
             }
+
             tbody > tr > td:first-child {
                 text-align: left;
                 flex-direction: row;
             }
+
             a {
                 text-decoration: none;
                 color: inherit;
                 position: relative;
             }
+
             a::before {
-                background-color: #fefefe20;
+                background-color: #151515;
                 display: inline-block;
                 font-size: 0.7rem;
                 padding: 6px;
@@ -72,11 +76,13 @@
                 left: 0;
                 width: 180px;
             }
+
             a:hover::before {
-                content: 'Voir le département sur Wikipedia';
+                content: "Voir le département sur Wikipedia";
             }
+
             a::after {
-                content: '';
+                content: "";
                 width: 0;
                 height: 1px;
                 display: block;
@@ -104,10 +110,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <a
-                            href="https://fr.wikipedia.org/wiki/Aube_(d%C3%A9partement)"
-                            >Aube</a
-                        >
+                        <a href="https://fr.wikipedia.org/wiki/Aube_(d%C3%A9partement)">Aube</a>
                     </td>
                     <td>10</td>
                     <td>Troyes</td>
@@ -115,10 +118,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a
-                            href="https://fr.wikipedia.org/wiki/Loire_(d%C3%A9partement)"
-                            >Loire</a
-                        >
+                        <a href="https://fr.wikipedia.org/wiki/Loire_(d%C3%A9partement)">Loire</a>
                     </td>
                     <td>42</td>
                     <td>Saint-Étienne</td>
@@ -126,10 +126,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a
-                            href="https://fr.wikipedia.org/wiki/Mayenne_(d%C3%A9partement)"
-                            >Mayenne</a
-                        >
+                        <a href="https://fr.wikipedia.org/wiki/Mayenne_(d%C3%A9partement)">Mayenne</a>
                     </td>
                     <td>53</td>
                     <td>Laval</td>
@@ -137,10 +134,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a
-                            href="https://fr.wikipedia.org/wiki/Vaucluse_(d%C3%A9partement)"
-                            >Vaucluse</a
-                        >
+                        <a href="https://fr.wikipedia.org/wiki/Vaucluse_(d%C3%A9partement)">Vaucluse</a>
                     </td>
                     <td>84</td>
                     <td>Avignon</td>
@@ -148,9 +142,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://fr.wikipedia.org/wiki/Hauts-de-Seine"
-                            >Hauts-de-Seine</a
-                        >
+                        <a href="https://fr.wikipedia.org/wiki/Hauts-de-Seine">Hauts-de-Seine</a>
                     </td>
                     <td>92</td>
                     <td>Nanterre</td>
@@ -158,9 +150,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://fr.wikipedia.org/wiki/Val-de-Marne"
-                            >Val-de-Marne</a
-                        >
+                        <a href="https://fr.wikipedia.org/wiki/Val-de-Marne">Val-de-Marne</a>
                     </td>
                     <td>94</td>
                     <td>Créteil</td>
@@ -176,9 +166,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://fr.wikipedia.org/wiki/Haute-Sa%C3%B4ne"
-                            >Haute-Saône</a
-                        >
+                        <a href="https://fr.wikipedia.org/wiki/Haute-Sa%C3%B4ne">Haute-Saône</a>
                     </td>
                     <td>70</td>
                     <td>Vesoul</td>
@@ -186,9 +174,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://fr.wikipedia.org/wiki/Puy-de-D%C3%B4me"
-                            >Puy-de-Dôme</a
-                        >
+                        <a href="https://fr.wikipedia.org/wiki/Puy-de-D%C3%B4me">Puy-de-Dôme</a>
                     </td>
                     <td>63</td>
                     <td>Clermont-Ferrand</td>
@@ -196,10 +182,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a
-                            href="https://fr.wikipedia.org/wiki/Oise_(d%C3%A9partement)"
-                            >Oise</a
-                        >
+                        <a href="https://fr.wikipedia.org/wiki/Oise_(d%C3%A9partement)">Oise</a>
                     </td>
                     <td>60</td>
                     <td>Beauvais</td>

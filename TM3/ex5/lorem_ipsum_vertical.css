@@ -25,8 +25,7 @@ header {
     width: 80px;
     background-color: transparent;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 2px 1px -6px #16161641, 0px 1px 1px 1px #16161641,
-        0px 1px 3px 0px #16161641;
+    box-shadow: 0px 2px 1px -6px #16161641, 0px 1px 1px 1px #16161641, 0px 1px 3px 0px #16161641;
     position: fixed;
 }
 
@@ -72,6 +71,7 @@ a:hover {
 .current {
     color: blue;
 }
+
 .current:hover {
     background-color: lightcoral;
 }
