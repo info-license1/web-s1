@@ -1,0 +1,173 @@
+html,
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    min-height: 100dvh;
+    min-width: 100dvw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1260px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(218 218 218);
+}
+
+nav > div {
+    display: flex;
+    padding: 0 20px;
+    gap: 15px;
+    border-right: 1px solid rgb(218 218 218);
+}
+
+nav > div:first-child {
+    padding-left: 0;
+}
+
+nav > div:last-child {
+    padding-right: 0;
+    border: none;
+}
+
+nav > div > img {
+    min-width: 48px;
+    height: 48px;
+    background-color: green;
+}
+
+nav > div > div > h5 {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+nav > div > div > p {
+    font-size: 11px;
+}
+
+main {
+    max-width: 1260px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+section > h1 {
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 35px;
+}
+
+section > div {
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-bottom: 1px solid rgb(218 218 218);
+}
+
+section > div > .img > img {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+section > div > .img > p {
+    font-size: 12px;
+}
+
+.content {
+    padding-right: 30px;
+}
+
+.content > div:last-child {
+    padding-top: 15px;
+}
+
+.content > div:first-child {
+    border-bottom: 1px dotted rgb(218 218 218);
+}
+
+.content > div > h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 5px 0 15px 0;
+}
+
+.content > div > .red {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(252 73 60);
+}
+
+.content > div > p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+aside {
+    padding-left: 20px;
+    border-left: 1px solid rgb(218 218 218);
+}
+
+aside > h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(1 37 58);
+}
+
+aside > p {
+    font-size: 15px;
+    color: rgb(39 117 147);
+}
+
+aside > div {
+    margin-top: 10px;
+    background-color: rgb(242 249 255);
+    border: 1px solid rgb(227 236 242);
+    border-top: 2px solid rgb(38 127 163);
+}
+
+aside > div > div {
+    margin: 14px;
+}
+
+aside > div > div:first-child {
+    margin-bottom: 0;
+    padding-bottom: 14px;
+    border-bottom: 1px dotted rgb(218 218 218);
+}
+
+aside > div > div > h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(1 37 58);
+}
+
+aside > div > div > p {
+    font-size: 15px;
+}
+
+aside > div > div > p:nth-child(2) {
+    color: rgb(39 95 117);
+    margin-top: 10px;
+}
+
+aside > div > div > p:last-child {
+    color: rgb(112 172 197);
+    margin-top: 10px;
+}

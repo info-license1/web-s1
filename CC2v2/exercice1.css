@@ -1,0 +1,60 @@
+html,
+body {
+    margin: 0;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+}
+.grid {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-areas:
+        "a c f f"
+        "a e e g"
+        "a d d d"
+        "a b b b";
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+.g {
+    grid-area: g;
+}
+
+.orange {
+    background-color: rgb(237 125 49);
+}
+
+.green {
+    background-color: rgb(112 173 71);
+}
+
+.blue {
+    background-color: rgb(68 114 196);
+}
